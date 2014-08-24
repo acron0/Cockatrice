@@ -200,7 +200,7 @@ QString PictureLoader::getPicUrl(CardInfo *card)
 
     // otherwise, fallback to the default url
     picUrl = picDownloadHq ? settingsCache->getPicUrlHq() : settingsCache->getPicUrl();
-    picUrl.replace("!name!", QUrl::toPercentEncoding(card->getCorrectedName()));
+    picUrl.replace("!name!", card->getCorrectedName());
 
     if (set) {
         picUrl.replace("!setcode!", QUrl::toPercentEncoding(set->getShortName()));

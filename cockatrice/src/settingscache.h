@@ -4,7 +4,7 @@
 #include <QObject>
 
 #define PIC_URL_DEFAULT "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=!cardid!&type=card"
-#define PIC_URL_HQ_DEFAULT "http://mtgimage.com/multiverseid/!cardid!.jpg"
+#define PIC_URL_HQ_DEFAULT "http://mtgimage.com/card/!name!.jpg"
 
 class QSettings;
 
